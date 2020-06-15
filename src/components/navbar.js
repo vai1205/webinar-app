@@ -48,11 +48,17 @@ const NavButton = ({match, history}) => {
                 <React.Fragment>
                     <nav id="navButton__nav" className="navButton__nav">
                         <ul className="navButton__list">
-                            <li className="navButton__item" onClick={handleRedirect("/")}>
+                            <li data-text="Home" className="navButton__item" onClick={handleRedirect("/")}>
                                 <div className="navButton__link">Home</div>
                             </li>
-                            <li className="navButton__item" onClick={handleRedirect("/about")}>
-                                <div className="navButton__link">About me</div>
+                            <li data-text="About Us" className="navButton__item" onClick={handleRedirect("/about")}>
+                                <div className="navButton__link">About Us</div>
+                            </li>
+                            <li data-text="Events" className="navButton__item" onClick={handleRedirect("/about")}>
+                                <div className="navButton__link">Events</div>
+                            </li>
+                            <li data-text="Contact" className="navButton__item" onClick={handleRedirect("/about")}>
+                                <div className="navButton__link">Contact</div>
                             </li>
                         </ul>
                     </nav>
