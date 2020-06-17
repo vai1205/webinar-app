@@ -1,4 +1,14 @@
 @import "abstracts/mixins";
 
+@import "variables/colors";
+
+@import "utilities/button";
+
 @import 'components/navbar';
+@import 'components/heroSection';
+@import 'components/aboutSection';
+@import 'components/eventSection';
+@import 'components/counter';
+@import 'components/eventCard';
+
 @import 'pages/home';

@@ -1,0 +1,22 @@
+.e-section{
+    text-align: center;
+    margin-top: 5rem;
+    .e-Subheading{
+        color: $primary;
+        text-transform: uppercase;
+        font-size: xx-large;
+        font-weight: 900;
+        display: block;
+        margin-bottom: 1.5rem;
+    }
+    .e-heading{
+        font-size: 3rem;
+        color: $black;
+        margin-bottom: 1.8rem;
+        font-weight: 900;
+        margin-bottom: 4rem;
+        @include respond(tab-port)  {
+            font-size: 1.5rem;
+        }
+    }
+}
