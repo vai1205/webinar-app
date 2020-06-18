@@ -50,6 +50,9 @@
 			color: $white;
 		}
 	}
+	img{
+		@include normalShadow;
+	}
 }
 .icon {
 	width: 50px;
