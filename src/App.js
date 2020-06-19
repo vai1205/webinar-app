@@ -11,7 +11,9 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={Home}/>
-          <Route exact path="/signup" component={Signup}/>
+          <Route exact path="/home/:section?" component={Home}/>
+          <Route exact path="/signin" component={Signup}/>
+          <Route exact path="*" component={Home}/>
         </Switch>
       </BrowserRouter>
     </React.Fragment>

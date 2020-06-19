@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { withRouter } from 'react-router-dom';
 
 const NavButton = ({match, history}) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -25,12 +26,21 @@ const NavButton = ({match, history}) => {
     };
     const handleRedirect = route => e => {
         e.preventDefault();
-        if(match.path === route){
-            document.getElementById("navButton__background").classList.remove("navButton__clicked");
-            setIsOpen(false);
-            return;
+        if(route !== match.path){
+            if(route==='/signin' && match.path !== '/signin'){
+                history.push(route);
+            } else {
+                if (match.path === '/' || match.path === "/home/:section?" || match.path === '*'){
+                    let selectedSectionId = route.replace(/\//g,"")
+                    let selectedSectionElement = document.getElementById(selectedSectionId);
+                    selectedSectionElement && selectedSectionElement.scrollIntoView();
+                } else{
+                    history.push(`home/${route.replace(/\//g,"")}`);
+                }
+            }
         }
-        history.push(route);
+        document.getElementById("navButton__background").classList.remove("navButton__clicked");
+        setIsOpen(false);
     }
     return(
         <div className="navButton">
@@ -48,20 +58,23 @@ const NavButton = ({match, history}) => {
                 <React.Fragment>
                     <nav id="navButton__nav" className="navButton__nav">
                         <ul className="navButton__list">
-                            <li data-text="Home" className="navButton__item" onClick={handleRedirect("/")}>
+                            <li data-text="Home" className="navButton__item" onClick={handleRedirect("/intro")}>
                                 <div className="navButton__link">Home</div>
                             </li>
                             <li data-text="About Us" className="navButton__item" onClick={handleRedirect("/about")}>
                                 <div className="navButton__link">About Us</div>
                             </li>
-                            <li data-text="Events" className="navButton__item" onClick={handleRedirect("/about")}>
+                            <li data-text="Events" className="navButton__item" onClick={handleRedirect("/events")}>
                                 <div className="navButton__link">Events</div>
                             </li>
-                            <li data-text="News" className="navButton__item" onClick={handleRedirect("/about")}>
+                            <li data-text="News" className="navButton__item" onClick={handleRedirect("/news")}>
                                 <div className="navButton__link">News</div>
                             </li>
-                            <li data-text="Register" className="navButton__item" onClick={handleRedirect("/about")}>
-                                <div className="navButton__link">Register</div>
+                            <li data-text="Team" className="navButton__item" onClick={handleRedirect("/team")}>
+                                <div className="navButton__link">Team</div>
+                            </li>
+                            <li data-text="Signin" className="navButton__item" onClick={handleRedirect("/signin")}>
+                                <div className="navButton__link">Sign In</div>
                             </li>
                         </ul>
                     </nav>
@@ -71,4 +84,4 @@ const NavButton = ({match, history}) => {
     );
 };
 
-export default NavButton;
+export default withRouter(NavButton);

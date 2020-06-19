@@ -10,7 +10,7 @@ const HeroSection = props => {
                 <div className="col-lg-4 mr-auto">
                     <h1>Cardio Web India</h1>
                     <p className="mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi quo deleniti quidem minima autem ea minus saepe assumenda? Animi quis sed porro numquam, perspiciatis natus iure consequuntur voluptates! Beatae, sequi!</p>
-                    <p><a href="#" className="button py-3 px-5"><span>EVENTS</span></a></p>
+                    <p><a href="#events" className="button py-3 px-5"><span>EVENTS</span></a></p>
                 </div>
                 <div className="col-lg-2 ml-auto"  data-aos="fade-up" data-aos-delay="100">
                     <figure className="img-absolute">
