@@ -79,7 +79,7 @@
         position: fixed;
         top: 3.5rem;
         right: 6.5rem;
-        background-image: radial-gradient(#5e0707ce, #0d0f1b38);
+        background-image: radial-gradient(#020000ce, #130101a6);
         z-index: 1000;
         transition: transform .4s cubic-bezier(0.86, 0, 0.07, 1);
 
@@ -149,7 +149,7 @@
                 &:hover{
                    transform: scale(1.4); 
                    z-index: 10000;
-                   background: $primary-dark;
+                   background: rgba($primary-dark,.8);
                    opacity: 1;
                    &::before{
                        left: calc(100% + 100px);
@@ -178,7 +178,7 @@
 
     &__link {
         display: inline-block;
-        font-size: xx-large;
+        font-size: xxx-large;
         font-weight: 600;
         padding: 1rem 2rem;
         color: #fff;
