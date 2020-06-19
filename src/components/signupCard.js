@@ -22,7 +22,7 @@ const SignupCard = props => {
                             <input type="password" name="" placeholder="Password" />
                             <input type="submit" name="" value="Login" />
                             <p className="si-signup">
-                                Don't have an account? 
+                                Don't have an account? &nbsp; 
                                 <a href="#" onClick={toggleForm}>Sign Up</a>
                             </p>
                         </form>
@@ -38,7 +38,7 @@ const SignupCard = props => {
                             <input type="password" name="" placeholder="Create Password" />
                             <input type="submit" name="" value="Sign Up" />
                             <p className="si-signup">
-                                Already have an account? 
+                                Already have an account? &nbsp;
                                 <a href="#" onClick={toggleForm}>Sign In</a>
                             </p>
                         </form>

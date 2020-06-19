@@ -1,7 +1,7 @@
 .si-section{
     position: relative;
     min-height: 100vh;
-    background: #fee648;
+    background: $primary;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,7 +75,7 @@
                     }
                     input[type=submit]{
                         max-width: 100px;
-                        background: #677eff;
+                        background: $primary;
                         color: #fff;
                         cursor: pointer;
                         font-size: 14px;
@@ -94,8 +94,11 @@
                         a{
                             font-weight: 600;
                             text-decoration: none;
-                            color: #677eff;
+                            color: $primary;
                         }
+                    }
+                    @include respond(tab-port){
+                        text-align: center;
                     }
                 }
                 @include respond(tab-port){
