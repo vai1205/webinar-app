@@ -1,0 +1,20 @@
+.t-section{
+    .t-main-subheading{
+        color: $primary;
+        text-transform: uppercase;
+        font-size: xx-large;
+        font-weight: 900;
+        display: block;
+        margin-bottom: 1.5rem;
+    }
+    .t-main-heading{
+        font-size: 3rem;
+        color: $black;
+        margin-bottom: 1.8rem;
+        font-weight: 900;
+        margin-bottom: 4rem;
+        @include respond(tab-port)  {
+            font-size: 1.5rem;
+        }
+    }
+}

@@ -57,8 +57,11 @@ const NavButton = ({match, history}) => {
                             <li data-text="Events" className="navButton__item" onClick={handleRedirect("/about")}>
                                 <div className="navButton__link">Events</div>
                             </li>
-                            <li data-text="Contact" className="navButton__item" onClick={handleRedirect("/about")}>
-                                <div className="navButton__link">Contact</div>
+                            <li data-text="News" className="navButton__item" onClick={handleRedirect("/about")}>
+                                <div className="navButton__link">News</div>
+                            </li>
+                            <li data-text="Register" className="navButton__item" onClick={handleRedirect("/about")}>
+                                <div className="navButton__link">Register</div>
                             </li>
                         </ul>
                     </nav>
