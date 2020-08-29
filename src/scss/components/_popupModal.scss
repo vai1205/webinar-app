@@ -1,13 +1,15 @@
 .popup-modal{
     color: $black;
+    width: 100%;
     .close-modal{
         cursor: pointer;
         position: absolute;
         display: block;
         padding: 2px 5px;
         line-height: 20px;
-        right: -10px;
-        top: -10px;
+        right: -12px;
+        width: 50px;
+        top: 17px;
         font-size: 24px;
         background: #ffffff;
         border-radius: 18px;
@@ -27,10 +29,22 @@
         display: flex;
         flex-direction: row;
         padding: 10px;
+        @include respond (phone){
+            flex-direction: column;
+        }
         .image{
+            @include respond(phone){
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
             img{
                 width: 300px;
                 height: 300px;
+                @include respond(phone){
+                    width: 250px;
+                    height: 250px;
+                }
             }
         }
         .details{
@@ -53,4 +67,20 @@
     &:hover{
         transform: translateX(6px);
     }
+}
+
+.popup-content{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    @include respond (phone){
+        width: 90% !important;
+        max-height: 80%;
+    }
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+.popup-overlay {
+    z-index: 9999999999999 !important;
 }
