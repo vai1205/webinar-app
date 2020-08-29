@@ -1,4 +1,6 @@
 import React from 'react';
+import {smartTrim} from '../helpers/commonHelpers';
+import PopupModal from './popupModal';
 
 const TeamCard = props => {
     const {data} = props;
@@ -16,8 +18,9 @@ const TeamCard = props => {
                             {name}
                         </h2>
                         <p>
-                            {about}
+                            {smartTrim(about, 160, " ", "...")}
                         </p>
+                        <PopupModal title={name} content={about} img={image}/>
                     </div>
                 </div>
             </div>

@@ -18,7 +18,7 @@
         @include normalShadow;
         transition: 0.3s ease-in-out;
         &:hover{
-            height: 420px;
+            height: 500px;
             transition-delay: 0.2s;
             .t-content{
                 visibility: visible;
@@ -43,7 +43,7 @@
             position: relative;
             margin-top: -140px;
             padding: 10px 15px;
-            text-align: center;
+            text-align: justify;
             color: $white;
             visibility: hidden;
             opacity: 0;
@@ -53,4 +53,5 @@
 }
 .t-heading{
     font-size: x-large !important;
+    font-weight: 900;
 }
