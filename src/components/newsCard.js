@@ -19,9 +19,9 @@ const NewsCard = props => {
                     <p className="ns-text">
                         {text}
                     </p>
-                    <a href="" className="button ns-button">
+                    {/* <a href="" className="button ns-button">
                         Read more
-                    </a>
+                    </a> */}
                 </div>
             </div>
         </React.Fragment>

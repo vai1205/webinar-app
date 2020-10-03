@@ -4,24 +4,27 @@ import e3img from "../resources/images/event3.png"
 
 export const eventData = [
     {
-        name: 'Event One',
-        shortName: 'One',
-        time:"10:30 am",
-        date:"10th July, 2020, Tuesday",
-        image:e1img
+        name: 'ECHO-DELHI MIDTERM Virtual 2020',
+        shortName: 'Echo',
+        time:"3.00-9.00 pm",
+        date:"Sunday 11th October, 2020",
+        image:e1img,
+        ctaText:"Enroll Now"
     },
     {
         name: 'Event Two',
         shortName: 'Two',
-        time:"12:30 pm",
-        date:"10th Aug, 2020, Monday",
-        image:e2img
+        time:"TBD",
+        date:"TBD",
+        image:e2img,
+        ctaText:"Coming Soon"
     },
     {
         name: 'Event Three',
         shortName: 'Three',
-        time:"9:00 am",
-        date:"10th Sep, 2020, Friday",
-        image:e3img
+        time:"TBD",
+        date:"TBD",
+        image:e3img,
+        ctaText:"Coming Soon"
     },
 ]

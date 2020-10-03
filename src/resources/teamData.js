@@ -10,11 +10,6 @@ import ti9 from '../resources/images/team9.jpg';
 
 export const teamData = [
     {
-        name:"Dr. Praveen Suman",
-        about:"Dr. Praveen is Head of the child development clinic in institute for  child health at Sir Ganga Ram Hospital, Working as Senior consultant developmental paediatrician since  August,1999. She is Awarded with Fellowship in Development and behavioral pediatrics by national IAP. Trained in   developmental pediatrics at Robert Warner Rehabilitation Centre, at Buffalo Children Hospital, Affiliated to Buffalo University, New York. She is Certified for various developmental testing-BSID, ADI-R.ADOs",
-        image:ti1
-    },
-    {
         name:"Dr. Balbir Singh",
         about:"Dr. Balbir Singh is an internationally renowned Cardiologist. He has been bestowed with the prestigious Padma Shree award for his service towards the society. His contribution for development of innovative technologies in the field of invasive cardiology has opened new avenues in the medical world. Apart from cardiology, Dr Singh’s expertise lies in the field of Coronary Angioplasty, Electrophysiology, Radiofrequency Ablation for arrhythmias and so on.",
         image:ti2
@@ -45,13 +40,15 @@ export const teamData = [
         image:ti7
     },
     {
-        name:"Dr. Vinayak Aggarwal",
-        about:"Dr. Vinayak Agarwal is a distinguished Cardiologist, and currently serving as a Director & Head - Non-Invasive & Clinical Cardiology in the PSRI Heart Institute, South Delhi.  Besides being accredited to many esteemed associations in the industry, he is also a Fellow of the American Society of Echocardiography. He is also the Joint Editor of the Journal of Indian Academy of Echocardiography (JIAE) since March 2009.",
-        image:ti8
-    },
-    {
         name:"Dr. JC Mohan",
+        isFounder:true,
         about:"Dr. JC Mohan is one of India's most experienced Heart Failure Expert with 44 years of experience in cardiovascular Medicine with unique expertise in   Advanced Echocardiography and Allied Imaging Technologies, All types of Percutaneous Cardiac Interventions, Device Implantation. Currently President of Apex Society for Continuing Medical Education in Cardiology and Indian Society of Interventional Cardiology.",
         image:ti9
+    },
+    {
+        name:"Dr. Vinayak Aggarwal",
+        isFounder:true,
+        about:"Dr. Vinayak Agarwal is a distinguished Cardiologist, and currently serving as a Director & Head - Non-Invasive & Clinical Cardiology in the PSRI Heart Institute, South Delhi.  Besides being accredited to many esteemed associations in the industry, he is also a Fellow of the American Society of Echocardiography. He is also the Joint Editor of the Journal of Indian Academy of Echocardiography (JIAE) since March 2009.",
+        image:ti8
     }
 ];

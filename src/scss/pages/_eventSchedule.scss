@@ -1,0 +1,70 @@
+.schedule-page {
+    background: #fafafa;
+    .row{
+        .col-md-4{
+            text-align: left;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .event-schedule-page{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h1{
+            color: $primary;
+        }
+        h2{
+            color: grey;
+        }
+        p{
+            width: 80%;
+            text-align: center;
+        }
+        .sub-heading{
+            align-self: center;
+            display: flex;
+            flex-wrap: wrap;
+            background-image: linear-gradient(to left, darkred, orange, red);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            h3{
+                font-size: large;
+            }
+        }
+        h4{
+            background-image: linear-gradient(to left, darkred, orange, red);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    .MuiTypography-root {
+        color: red;
+    }
+    .MuiPaper-elevation2 {
+        box-shadow: -2px -2px 8px rgba(255,255,255,1),
+                -2px -2px 12px rgba(255,255,255,0.5),
+                inset 2px 2px 4px rgba(255,255,255,0.1),
+                2px 2px 8px rgba(0,0,0,0.15);
+        border-radius: 20px;
+    }
+    .footer-section{
+        background: #f2f3f7;
+    }
+    .spacer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .button{
+            border: none;
+            color: red;
+            padding: 2rem 5rem;
+            font-size: xx-large;
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+}

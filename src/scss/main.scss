@@ -3,6 +3,7 @@
 @import "variables/colors";
 
 @import "utilities/button";
+@import "utilities/backBtn";
 
 @import 'components/navbar';
 @import 'components/heroSection';
@@ -19,3 +20,5 @@
 @import 'components/eventCard';
 
 @import 'pages/home';
+@import 'pages/event';
+@import 'pages/eventSchedule';

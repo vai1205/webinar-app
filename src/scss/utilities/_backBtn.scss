@@ -1,0 +1,23 @@
+.back{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    @include themeShadow;
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    transition: all .2s;
+    z-index: 10000;
+    cursor: pointer;
+    &::before{
+        content: "<";
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        transform: translate(-50%,-50%);
+        font-size: xx-large;
+    }
+    &:hover{
+        transform: scale(.9);
+    }
+}

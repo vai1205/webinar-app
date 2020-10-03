@@ -63,6 +63,7 @@
             h2{
                 position: relative;
                 font-weight: 900;
+                font-size: large;
                 letter-spacing: 1px;
                 color: $black;
                 text-transform: uppercase;
@@ -101,12 +102,13 @@
                     }
                 }
             }
-            a {
-                @include themeShadow;
+            button {
+                //@include themeShadow;
                 display: inline-block;
                 padding: 10px 20px;
                 background: $primary;
                 margin-top: 10px;
+                border: none;
                 text-decoration: none;
                 font-weight: 600;
                 color: $white;
@@ -117,7 +119,7 @@
         }
         &:hover .ec-contentBox {
             height: 210px;
-            a{
+            button{
                 opacity: 1;
                 transform: translateY(0px);
                 transition-delay: 0.75s;
