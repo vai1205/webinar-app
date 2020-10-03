@@ -1,0 +1,46 @@
+.register-page{
+    background: #f2f3f7;
+    .heading{
+        text-align: center;
+        h1{
+            span{
+                color: $primary;
+            }
+        }
+        h5{
+            color: $primary; 
+        }
+    }
+    .registration{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .button{
+            color:$primary;
+        }
+        .contact{
+            h5{
+                font-weight: 400;
+                font-size: large;
+            }
+            h4{
+                font-size: x-large;
+                span{
+                    color: $primary;
+                }
+            }
+        }
+    }
+    .img-container{
+        img{
+            width: 100%;
+        }
+    }  
+    .MuiFormControl-root{
+        width: 100%;
+    }
+    .copyright{
+        text-align: center;
+        color: $primary;
+    }
+}
