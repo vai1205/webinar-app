@@ -1,0 +1,27 @@
+.reg-success-page{
+    background: #f2f3f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .success-img{
+        width: 100%;
+    }
+    .congratulations{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    h2{
+        color:$primary;
+    }
+    .button{
+        color: $primary;
+        border: none;
+        text-align: center;
+        width: 50%;
+        &:focus{
+            outline: none;
+        }
+    }
+}

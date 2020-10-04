@@ -30,6 +30,16 @@
                 }
             }
         }
+        .button{
+            border: none;
+            transition: all .2s;
+            &:hover{
+                transform: scale(.95);
+            }
+            &:focus{
+                outline: none;
+            }
+        }
     }
     .img-container{
         img{
@@ -43,4 +53,11 @@
         text-align: center;
         color: $primary;
     }
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
