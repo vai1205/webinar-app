@@ -6,7 +6,7 @@ export const eventData = [
     {
         name: 'ECHO-DELHI MIDTERM Virtual 2020',
         shortName: 'Echo',
-        time:"3.00-9.00 pm",
+        time:"3:00pm - 9:00 pm",
         date:"Sunday 11th October, 2020",
         image:e1img,
         ctaText:"Enroll Now"

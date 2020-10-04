@@ -70,9 +70,9 @@ const NavButton = ({match, history}) => {
                             <li data-text="News" className="navButton__item" onClick={handleRedirect("/news")}>
                                 <div className="navButton__link">News</div>
                             </li>
-                            <li data-text="Signin" className="navButton__item" onClick={handleRedirect("/signin")}>
+                            {/* <li data-text="Signin" className="navButton__item" onClick={handleRedirect("/signin")}>
                                 <div className="navButton__link">Sign In</div>
-                            </li>
+                            </li> */}
                         </ul>
                     </nav>
                 </React.Fragment>

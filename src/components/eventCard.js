@@ -3,10 +3,10 @@ import { withRouter } from 'react-router-dom';
 
 const EventCard = props => {
     const { details, history } = props;
-    const { name, shortName, time, date, image } = details;
+    const { name, shortName, time, date, image, ctaText } = details;
     const openEvents = e => {
         e.preventDefault();
-        history.push("event");
+        ctaText !== "Coming Soon" && history.push("event");
     }
     return (
         <React.Fragment>
@@ -25,7 +25,7 @@ const EventCard = props => {
                             <h3>Date</h3>
                             <span>{date}</span>
                         </div>
-                        <button onClick={openEvents}>Enroll Now</button>
+                        <button onClick={openEvents}>{ctaText}</button>
                     </div>
                 </div>
             </div>

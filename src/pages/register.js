@@ -38,7 +38,7 @@ const Register = props => {
                                     <div className="container">
                                         <div className="heading mb-5">
                                             <h1 className="pt-5">ECHO-DELHI MIDTERM <span>Virtual 2020</span></h1>
-                                            <h5>Sunday, October 11th, 2020 3.00-9.00 pm </h5>
+                                            <h5>Sunday, October 11th, 2020 3:00pm - 9:00 pm </h5>
                                         </div>
                                         <div className="row registration">
                                             <div className="col-md-4">
