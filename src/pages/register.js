@@ -72,7 +72,7 @@ const Register = props => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="copyright mt-3">Organised by: Cardio Web India</div>
+                                    <div className="copyright mt-3">Organised by: Cardio Web India || Powered by: MdeRx Healthcare Systems</div>
                                 </div>
                         }
                     </React.Fragment>
